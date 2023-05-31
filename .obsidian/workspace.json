@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
+                "file": "Assignments/Assignment 0 - Git Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
+                "file": "Assignments/Assignment 0 - Git Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
+                "file": "Assignments/Assignment 0 - Git Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md"
+                "file": "Assignments/Assignment 0 - Git Basics.md"
               }
             }
           }
@@ -150,8 +150,8 @@
   },
   "active": "4c3aa99116fd1a33",
   "lastOpenFiles": [
-    "Lab Notes/Lab 0 - Git Basics/Lab 0.d - Git Commands.md",
     "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
+    "Lab Notes/Lab 0 - Git Basics/Lab 0.d - Git Commands.md",
     "Assignments/Assignment 1 - Reasoning About Programs.md",
     "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md",
     "Lecture Notes/Lecture 0/0.f  - Types of Data.md",
