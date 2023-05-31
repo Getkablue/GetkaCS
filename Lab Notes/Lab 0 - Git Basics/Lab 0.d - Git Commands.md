@@ -33,11 +33,10 @@ git clone https://github.com/Getkablue/SampleRepo.git
 ```
 (This will make a new directory called SampleRepo in the current working directory)
 
-To add new files to your repo so they are tracked:
+To add changes (or new files) to the current commit-in-progress
 ```
 git add ./mynewfile.py
 ```
-You don't need to do this unless you made a new file which is not yet tracked.
 
 To remove a file from tracking (this doesn't necessarily delete it, just removes it from the repo):
 ```

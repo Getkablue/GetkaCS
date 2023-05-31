@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Assignments/Assignment 1 - Reasoning About Programs.md",
+                "file": "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assignments/Assignment 1 - Reasoning About Programs.md",
+                "file": "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Assignments/Assignment 1 - Reasoning About Programs.md",
+                "file": "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Assignments/Assignment 1 - Reasoning About Programs.md"
+                "file": "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md"
               }
             }
           }
@@ -150,16 +150,16 @@
   },
   "active": "4c3aa99116fd1a33",
   "lastOpenFiles": [
+    "Lab Notes/Lab 0 - Git Basics/Lab 0.d - Git Commands.md",
+    "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
+    "Assignments/Assignment 1 - Reasoning About Programs.md",
     "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md",
     "Lecture Notes/Lecture 0/0.f  - Types of Data.md",
-    "Assignments/Assignment 1 - Reasoning About Programs.md",
-    "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
     "Lecture Notes/Lecture 0/0.c - Programming Languages I - Intro.md",
     "Assignments/Assignment 2 - Environment Setup.md",
     "Lab Notes/Lab 1 - Environment Setup/1.a - Hello World!.md",
     "Lab Notes/Lab 1 - Environment Setup/1.b - Set up Python.md",
     "Assignments/Assignment 0 - Git Basics.md",
-    "Lab Notes/Lab 0 - Git Basics/Lab 0.d - Git Commands.md",
     "Lab Notes/Lab 0 - Git Basics/Lab 0.b - Understanding Git.md",
     "Lab Notes/Lab 0 - Git Basics/Lab 0.a - Source Control Intro.md",
     "Lab Notes/Lab 0 - Git Basics/Lab 0.c - Branches and Forks.md",
