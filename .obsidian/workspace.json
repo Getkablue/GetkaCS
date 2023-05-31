@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "034ed71d36020dcf",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd5edbf4aab839f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4c3aa99116fd1a33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Assignments/Assignment 1 - Reasoning About Programs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b27a082a2dc6347d",
+    "type": "split",
+    "children": [
+      {
+        "id": "c59d9dd52916207a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8e473309b494789",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a9f027913309c3bc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cfbbf92721de2535",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 377.5
+  },
+  "right": {
+    "id": "7e5ef70102f2dc75",
+    "type": "split",
+    "children": [
+      {
+        "id": "f0d858d3be62f342",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b7119f732bfbed5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Assignments/Assignment 1 - Reasoning About Programs.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1f251866844465f6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Assignments/Assignment 1 - Reasoning About Programs.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "82e1a384f6702b57",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "db25303e959dd56a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Assignments/Assignment 1 - Reasoning About Programs.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "4c3aa99116fd1a33",
+  "lastOpenFiles": [
+    "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md",
+    "Lecture Notes/Lecture 0/0.f  - Types of Data.md",
+    "Assignments/Assignment 1 - Reasoning About Programs.md",
+    "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
+    "Lecture Notes/Lecture 0/0.c - Programming Languages I - Intro.md",
+    "Assignments/Assignment 2 - Environment Setup.md",
+    "Lab Notes/Lab 1 - Environment Setup/1.a - Hello World!.md",
+    "Lab Notes/Lab 1 - Environment Setup/1.b - Set up Python.md",
+    "Assignments/Assignment 0 - Git Basics.md",
+    "Lab Notes/Lab 0 - Git Basics/Lab 0.d - Git Commands.md",
+    "Lab Notes/Lab 0 - Git Basics/Lab 0.b - Understanding Git.md",
+    "Lab Notes/Lab 0 - Git Basics/Lab 0.a - Source Control Intro.md",
+    "Lab Notes/Lab 0 - Git Basics/Lab 0.c - Branches and Forks.md",
+    "Lab Notes/Untitled.md",
+    "Lab Notes/Lab 1 - Environment Setup",
+    "Lecture Notes/Lecture 1",
+    "Miscellaneous Notes/Semantic Versioning Notes.md",
+    "Miscellaneous Notes/Markdown Notes.md",
+    "Lecture Notes/WIPs and extras/Programming Languages III - Paradigms.md",
+    "Miscellaneous Notes/Glossary.md",
+    "Lecture Notes/Untitled.md",
+    "Lecture Notes/Lecture 0/0.e - Programming Languages II - Compiled vs Interpreted.md",
+    "Lecture Notes/WIPs and extras",
+    "Lecture Notes/Lecture 0/0.b - Basic Computing Review.md",
+    "Lecture Notes/Lecture 0/0.a - Brief History of Computing.md",
+    "Lecture Notes/Lecture 0",
+    "Lab Notes/Lab 0 - Git Basics",
+    "Syllabus.md",
+    "Assignments",
+    "Miscellaneous Notes",
+    "Slides",
+    "Lab Notes",
+    "Lecture Notes"
+  ]
+}

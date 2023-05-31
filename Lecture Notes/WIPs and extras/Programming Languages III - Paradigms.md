@@ -1,0 +1,21 @@
+Most likely, any exposure you have had to programming up until now has been of a particular style -- instructions are written line by line, in order, and that is exactly how the instructions are executed. Your program consists of an entry point, and proceeds from there, following instructions you have written, perhaps jumping to functions. This is known as an *imperative* (also sometimes *procedural*) programming paradigm / style.
+
+At this point you may be wondering:  "what other way there could possibly be?"
+
+And you'd be reasonable in doing so, especially given what we have learned about how a processor executes instructions.
+
+There are other programming paradigms, including object-oriented programming (OOP), functional programming, declarative programming, data-driven programming, aspect-oriented programming, and more. Some of them overlap, and most software incorporates elements of multiple paradigms. Some paradigms don't exist until they are built on top of other paradigms. 
+
+Some languages explicitly endorse one paradigm as part of their design. For example, Haskell is a strictly functional language. Other languages, such as C++ and Python, aim to be multi-paradigm (perhaps even all-paradigm). We know that these languages are Turing complete, so of course, any program *can* be written in any paradigm (* well, with a few exceptions...), but some types of problems map better to certain paradigms. And sometimes you just have a particular style you like. Much of the hubbub about programming languages is really more about how *nice* it is to write code in, rather than about any actual difference in capability. 
+
+And honestly, that actually does mean a great deal. Software projects are often extremely complex, and the people who work on them generally get compensated quite well -- developer time is not cheap. Anything that makes source code easier to work on or easier to understand is extremely valuable. On the other hand, performance is also often critical. In high-speed trading software, a change in milliseconds of performance could cost a firm millions of dollars. In medical or aerospace software, performance and reliability are responsible for lives. Being sure that a bug won't arise during a life-saving operation or during a flight is an ethical requirement. Languages historically try their hardest to balance these concerns. Those which don't become dust in the wind.
+
+## Common Paradigms
+
+*Object-oriented* programming is the paradigm we will most focus on in this course, to the point of having multiple segments on it. Object-oriented programming, in short, focuses on *bundling code and data*. In OOP, the principle is to reason about programs as a number of objects interacting with one another. Thinking about parts of your program in this way often makes it easier to reason about, because you have an object metaphor for different pieces of functionality. It is also useful for things like simulations and game engines, where these constructs can directly represent "things" in the game world. It's also used very often in GUI software. A reasonable understanding of OOP will take you very far.
+
+*Functional* programming (which honestly is kind of a terrible name) treats functions as first-class members of the language. That is, functions themselves can be passed around like data and used by other functions. Functional programming advises against the use of state, and prefers for functions to produce output without changing their input in any way ("immutability"). Sometimes this is seen as some 4D chess gigabrain stuff, and there is some truth to that ("monads are just monoids in the category of endofunctors", c'mon guys...) but it's really not as bad as it sounds, and avoiding reliance on state can actually avoid some nasty bugs. 
+
+*Data-driven* programming is a paradigm in which we tell the computer what kinds of data we want to match (i.e. to find and work on) and what kind of processing needs to be applied to it to produce a result. Often this is used in systems relying on databases, where the bulk of our work is in retrieving data which already exists and doing some combination of filtering and transformation/cleanup.
+
+There are other paradigms to be aware of, but the above three will be most useful for us in our exploration. Other paradigms tend to be more experimental.
