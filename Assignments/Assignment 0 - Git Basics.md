@@ -7,5 +7,4 @@ Keep track of any git commands that you use to do these tasks, and put them into
 3. Create a new repo under your own GitHub account with the name "CS4G". Send me the link on Discord.
 4. Now fork the repo you cloned in (1). Create a pull request to my repo that adds your name to the bottom of this file.
 5. Create a new branch of the repo from (4) and push it to your fork as a separate branch from main/master.
-6. 
-7. Commit your responses to this assignment into your repo from the previous question as a single file. The filename should contain "Git Basics" in some form.
+6. Commit your responses to this assignment into your repo from the question 3 as a single file. The filename should contain "Git Basics" in some form.
