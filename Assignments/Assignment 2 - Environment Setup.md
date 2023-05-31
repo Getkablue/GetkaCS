@@ -2,7 +2,7 @@ This assignment does not require any readings, but the computing review might he
 
 I assume here that you are on Windows. You do not need to provide any solutions for this assignment. Instead, focus on getting the development environment set up on your PC.
 
-1. Go to python.org and download the most recent stable Python version. Open up a shell (like PowerShell) and run "python --version" to verify that it is properly installed. 
+1. Go to python.org and download the most recent stable Python version. Open up a shell (like PowerShell) and run "python --version" to verify that it is properly installed. If you get an error along the lines of "python is not a recognizable command", then you probably need to select "Add to PATH" in the installer.
 
 When Python is installed properly, copy-paste the following Python code into a new file and run that file with python.
 ``` python
@@ -28,4 +28,5 @@ int main()
 }
 ```
 
-Again, if you see any errors, get to googling or see me.
+Again, if you see any errors, get to googling or see me. One helpful resource: https://devblogs.microsoft.com/cppblog/cpp-tutorial-hello-world/
+
