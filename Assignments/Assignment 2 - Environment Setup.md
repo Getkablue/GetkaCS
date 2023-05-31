@@ -17,7 +17,7 @@ If you get any errors, get to work googling or see me.
 
 2. Go to Microsoft's webpage and get the Community edition of visual studio (Any version 2015 or newer is fine). It should include "MSVC Build Tools", but make sure that you get them if it doesn't. Also install the Desktop C++ environment if prompted.
 
-When Visual Studio is installed, create a new C or C++ project (select command-line/terminal project, or alternatively "blank project", when given the chance -- don't make a Windows MFC app or anything like that). Paste in the following code and hit F5. The program should build and then run (depending on your environment, it might close right away, but you should know if you receive an error).
+When Visual Studio is installed, create a new C++ project (select command-line/terminal project, or alternatively "blank project", when given the chance -- don't make a Windows MFC app or anything like that). Paste in the following code and hit F5. The program should build and then run (depending on your environment, it might close right away, but you should know if you receive an error).
 
 ``` cpp
 #include <iostream>
@@ -27,6 +27,16 @@ int main()
   return 0;
 }
 ```
+You should be able to also compile a C program containing the following:
+
+```c
+#include <stdio.h>
+int main() {
+	printf("Hello world!\n");
+	return 0;
+}
+```
+
 
 Again, if you see any errors, get to googling or see me. One helpful resource: https://devblogs.microsoft.com/cppblog/cpp-tutorial-hello-world/
 

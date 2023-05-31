@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md",
+                "file": "Lecture Notes/WIPs and extras/Basic Program Structure II - Variables, Constants, Values and State.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md",
+                "file": "Lecture Notes/WIPs and extras/Basic Program Structure II - Variables, Constants, Values and State.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md",
+                "file": "Lecture Notes/WIPs and extras/Basic Program Structure II - Variables, Constants, Values and State.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md"
+                "file": "Lecture Notes/WIPs and extras/Basic Program Structure II - Variables, Constants, Values and State.md"
               }
             }
           }
@@ -150,15 +150,19 @@
   },
   "active": "4c3aa99116fd1a33",
   "lastOpenFiles": [
+    "Lecture Notes/WIPs and extras/Basic Program Structure III - Control Flow and Basic Functions.md",
+    "Lecture Notes/WIPs and extras/Basic Program Structure II - Variables, Constants, Values and State.md",
+    "Lecture Notes/WIPs and extras/Basic Program Structure I - Analyzing Hello World.md",
+    "Miscellaneous Notes/Markdown Notes.md",
     "Assignments/Assignment 0 - Git Basics.md",
-    "Lab Notes/Lab 0 - Git Basics/Lab 0.d - Git Commands.md",
-    "Lecture Notes/Lecture 0/0.b - Basic Computing Review.md",
     "Assignments/Assignment 2 - Environment Setup.md",
+    "Lecture Notes/Lecture 0/0.b - Basic Computing Review.md",
+    "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md",
+    "Lab Notes/Lab 0 - Git Basics/Lab 0.d - Git Commands.md",
     "README.md",
     "Syllabus.md",
     "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
     "Assignments/Assignment 1 - Reasoning About Programs.md",
-    "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md",
     "Lecture Notes/Lecture 0/0.f  - Types of Data.md",
     "Lecture Notes/Lecture 0/0.c - Programming Languages I - Intro.md",
     "Lab Notes/Lab 1 - Environment Setup/1.a - Hello World!.md",
@@ -170,13 +174,11 @@
     "Lab Notes/Lab 1 - Environment Setup",
     "Lecture Notes/Lecture 1",
     "Miscellaneous Notes/Semantic Versioning Notes.md",
-    "Miscellaneous Notes/Markdown Notes.md",
     "Lecture Notes/WIPs and extras/Programming Languages III - Paradigms.md",
     "Miscellaneous Notes/Glossary.md",
     "Lecture Notes/Untitled.md",
     "Lecture Notes/Lecture 0/0.e - Programming Languages II - Compiled vs Interpreted.md",
     "Lecture Notes/WIPs and extras",
-    "Lecture Notes/Lecture 0/0.a - Brief History of Computing.md",
     "Lecture Notes/Lecture 0",
     "Lab Notes/Lab 0 - Git Basics",
     "Assignments",
