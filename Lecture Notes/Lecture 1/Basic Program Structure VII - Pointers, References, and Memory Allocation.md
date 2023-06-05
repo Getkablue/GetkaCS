@@ -70,9 +70,11 @@ If it helps, you can think of a Color& parameter as taking *a variable name whic
 ``` cpp
 	myColor.b = blueValue;
 ```
-This isn't actually how it works, to be clear. But it's close enough that it may help you understand the concept.
+The function isn't *actually* changing at all, to be clear. But it's close enough that it may help you understand the concept. 
 
-Try modifying the code above to take references as input, rather than values, and run the code again. What do you see? Happy now?
+Symbols, in general, are references to another thing -- meaning that names are generally references. When we say `int a`, we are saying there is a symbol `a` which refers to an integer value. In this sense, any variable or const is "actually" a reference to a value. But we don't often think about them like that, because the symbol `a` can be immediately resolved to its value. For example, `int b = a;` means "the value referred to by `b` becomes the value referred to by `a`". Depending on how you think about it, you might think of `int& b = a;` such that the symbol `b`  *is the symbol* `a`
+
+Try modifying the previous code sample to take references as input, rather than values, and run the code again. What do you see? Happy now?
 
 References can be `const`-qualified. If you do, it acts just like how a `const` would -- you cannot modify the object through a `const` reference.
 
@@ -150,7 +152,7 @@ As a general rule, just think, when you are writing your function: Am I operatin
 
 Pointers are a type of object in programming which represent the location (or *address*) of another object in memory. **Do not overcomplicate this idea.** You can "dereference" a pointer to get the object it points at. Much like references, this is useful when you need to operate on an object, and you are not sure at compile time which object will need to be operated on. It also allows you to change variables "at a distance" -- as long as you have a pointer to an object, you can modify that object even if that object is directly accessible by your function.
 
-In essence, a pointer is like a reference, but not necessarily bound to a variable or const which exists. Instead, a pointer points to a location in memory, and can be used to manipulate that location. A pointer is declared with a typename followed by an asterisk (\*). Here we just use ints.
+In essence, a pointer is like a reference, but not necessarily bound to a variable or const which exists -- instead a pointer relies on the fact that values are stored in actual places in memory. Instead, a pointer points to a location in memory, and can be used to manipulate that location. A pointer is declared with a typename followed by an asterisk (\*). Here we just use `int`s.
 
 ``` c
 // Create an integer
@@ -175,13 +177,24 @@ int someValue = *newPtr; // Might crash here with segmentation fault
 std::cout << "Value in someValue: " << someValue << std::endl; // if not, enjoy junk!
 ```
 
-The above example uses what is colloquially known as a "raw pointer". Pointers are one of the lowest-level constructs you will commonly manipulate. Remember, the entirety of your loaded executable program (and in fact, any program running on your machine) is just a chunk of memory. Hence, pointers can do extremely powerful and dangerous things. Modifying consts, modifying function code... nothing is really out of the question with pointers. For many advanced applications, especially systems programming, they are essential.
+Remember, a pointer is *itself* a type of data (underneath the hood, usually just a memory address in the form of integer of the same size as the system processor's architecture supports). Hence, you can have a *pointer to a pointer*, and so on:
+``` cpp
+int a = 4;
+int* aPtr = &a;
+int** aPtrPtr = &aPtr;
+int*** aPtrPtrPtr = &aPtrPtr;
+//... You can go crazy doing this.
+```
+
+As an exercise, try to visualize the above snippet. For each variable, show its address in memory and its value. You can make up memory addresses, or, for bonus points, find a way to print them from the code so you can see their actual values.
+
+The above examples use what are colloquially known as a "raw pointers". Pointers are one of the lowest-level constructs you will commonly manipulate. Remember, the entirety of your loaded executable program (and in fact, any program running on your machine) is just a chunk of memory. Hence, pointers can do extremely powerful and dangerous things. Modifying consts, modifying function code... nothing is really out of the question with pointers. For many advanced applications, especially systems programming, they are essential.
 
 If you dereference a pointer which points to a memory location which does not actually contain the object you are attempting to get and try to do something with it, the result is *completely undefined behavior*. The programming language gives you absolutely *no guarantees* about what happens in this scenario. I will tell you that in reality, the most likely behavior is that you either get a corrupted version of the value you intended to get (caused by the interpretation of junk data as a value), or the operating system's memory protection will become evident and your program will crash. *But as a programmer you are not guaranteed any of this*. Your program crashing is the *best case scenario*. Data corruption is insidious and often hard to detect (the compiler certainly can't do so) and is responsible for many of the most infamous bugs (missingNo. says "H̷̥̘̺͔͖̬̪̞͔̺̳͇͆͑̇̍̀͆̌͌̄̓̒͘̚̕i̴̧̟̤͚͈̺͉̦͙̥̭͓̖̍͋͐̌̿̽̈́̀̓̆͛̇̐ͅ".)
 
 Seriously:  missingNo., M' and Glitch City in Pokemon, World -1 in Super Mario Bros.... Many of those classic glitches are due to a pointer, which assumes memory is loaded in a certain place. That data may not actually be loaded there under certain conditions, which means you end up reading *something else* and interpreting it as a Pokemon or as a level. These days, many operating systems and compilers include built-in memory protection -- basically, the OS "hides" which memory addresses your process is actually running in, and parts of memory get marked as readable, writable, executable, or some combination. The result is that each process has a sort of "managed sandbox" in which it operates. Attempting to write read-only memory will cause a crash. Attempting to write to memory which hasn't been reserved will cause a crash. You get the picture. As I mentioned, unless you are doing real low-level systems or reverse engineering work, these things are all there to help you and prevent things like missingNo (and if you are doing those things, there are tools to disable or work around them). Imagine having something that destructive on your personal computer, not just a Gameboy...
 
-Later in this section we will discuss so-called "smart" pointers, which attempt to resolve many of the issues with raw pointers.
+Many newer languages, like Rust, attempt to handle pointer safety at the language level (which C and C++ do not), in order to be safer. The problem of accidentally dereferencing a null pointer has been referred to as "The Billion Dollar Problem". Later in this section we will discuss so-called "smart" pointers, which is an attempt by the C++ committee to resolve many of the issues with raw pointers. 
 
 ## Memory Allocation
 

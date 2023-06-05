@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Assignments/Checkpoint 1 - Initial Project Research.md",
+                "file": "Lecture Notes/Lecture 1/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assignments/Checkpoint 1 - Initial Project Research.md",
+                "file": "Lecture Notes/Lecture 1/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Assignments/Checkpoint 1 - Initial Project Research.md",
+                "file": "Lecture Notes/Lecture 1/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Assignments/Checkpoint 1 - Initial Project Research.md"
+                "file": "Lecture Notes/Lecture 1/Basic Program Structure VII - Pointers, References, and Memory Allocation.md"
               }
             }
           }
@@ -175,8 +175,8 @@
   },
   "active": "17a8802ce9c44740",
   "lastOpenFiles": [
-    "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
     "Assignments/Checkpoint 1 - Initial Project Research.md",
+    "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
     "Assignments/Assignment 6 - Writing Basic Programs, part 4.md",
     "Assignments/Assignment 3 - Writing Basic Programs, part 1.md",
     "Assignments/Assignment 4 - Writing Basic Programs, part 2.md",
