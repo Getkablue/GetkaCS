@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
+                "file": "Assignments/Checkpoint 1 - Initial Project Research.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
+                "file": "Assignments/Checkpoint 1 - Initial Project Research.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
+                "file": "Assignments/Checkpoint 1 - Initial Project Research.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Assignments/Assignment 7 - Writing Basic Programs, part 5.md"
+                "file": "Assignments/Checkpoint 1 - Initial Project Research.md"
               }
             }
           }
@@ -175,8 +175,9 @@
   },
   "active": "17a8802ce9c44740",
   "lastOpenFiles": [
-    "Assignments/Assignment 6 - Writing Basic Programs, part 4.md",
     "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
+    "Assignments/Checkpoint 1 - Initial Project Research.md",
+    "Assignments/Assignment 6 - Writing Basic Programs, part 4.md",
     "Assignments/Assignment 3 - Writing Basic Programs, part 1.md",
     "Assignments/Assignment 4 - Writing Basic Programs, part 2.md",
     "Assignments/Assignment 5 - Writing Basic Programs, part 3.md",
@@ -200,7 +201,6 @@
     "Assignments/Assignment 0 - Git Basics.md",
     "Assignments/Assignment 2 - Environment Setup.md",
     "Lecture Notes/Lecture 0/0.b - Basic Computing Review.md",
-    "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md",
     "Lab Notes/Lab 1 - Environment Setup",
     "Lecture Notes/Lecture 1",
     "Lecture Notes/WIPs and extras",
