@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture Notes/WIPs and extras/Basic Program Structure II - Variables, Constants, Values and State.md",
+                "file": "Lecture Notes/Lecture 1/Basic Program Structure VIII - Arrays and Collections.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "be462ffb0177ab1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Assignments/Assignment 4 - Writing Basic Programs, part 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17a8802ce9c44740",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture Notes/WIPs and extras/Basic Program Structure II - Variables, Constants, Values and State.md",
+                "file": "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture Notes/WIPs and extras/Basic Program Structure II - Variables, Constants, Values and State.md",
+                "file": "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture Notes/WIPs and extras/Basic Program Structure II - Variables, Constants, Values and State.md"
+                "file": "Assignments/Assignment 7 - Writing Basic Programs, part 5.md"
               }
             }
           }
@@ -148,36 +173,36 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4c3aa99116fd1a33",
+  "active": "17a8802ce9c44740",
   "lastOpenFiles": [
-    "Lecture Notes/WIPs and extras/Basic Program Structure III - Control Flow and Basic Functions.md",
-    "Lecture Notes/WIPs and extras/Basic Program Structure II - Variables, Constants, Values and State.md",
-    "Lecture Notes/WIPs and extras/Basic Program Structure I - Analyzing Hello World.md",
+    "Assignments/Assignment 6 - Writing Basic Programs, part 4.md",
+    "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
+    "Assignments/Assignment 3 - Writing Basic Programs, part 1.md",
+    "Assignments/Assignment 4 - Writing Basic Programs, part 2.md",
+    "Assignments/Assignment 5 - Writing Basic Programs, part 3.md",
+    "Untitled.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure Z - Conclusion.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure II - Variables, Constants, Values and State.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure III - Control Flow and Conditionals.md",
+    "Lecture Notes/WIPs and extras/Programming Languages III - Paradigms.md",
+    "Lecture Notes/WIPs and extras/Python Differences.md",
+    "Lab Notes/Untitled.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure - Code Comments.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure -  C vs C++.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure VI - Structs and Classes.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure VIII - Arrays and Collections.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure IV - Loops.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure I - Analyzing Hello World.md",
+    "Lecture Notes/Lecture 1/Basic Program Structure V - Functions and Scope.md",
+    "Lecture Notes/Lecture 0/0.f  - Types of Data.md",
     "Miscellaneous Notes/Markdown Notes.md",
     "Assignments/Assignment 0 - Git Basics.md",
     "Assignments/Assignment 2 - Environment Setup.md",
     "Lecture Notes/Lecture 0/0.b - Basic Computing Review.md",
     "Lecture Notes/Lecture 0/0.d - Low-level Processing Basics.md",
-    "Lab Notes/Lab 0 - Git Basics/Lab 0.d - Git Commands.md",
-    "README.md",
-    "Syllabus.md",
-    "Lab Notes/Lab 0 - Git Basics/Lab 0.e - Credentials.md",
-    "Assignments/Assignment 1 - Reasoning About Programs.md",
-    "Lecture Notes/Lecture 0/0.f  - Types of Data.md",
-    "Lecture Notes/Lecture 0/0.c - Programming Languages I - Intro.md",
-    "Lab Notes/Lab 1 - Environment Setup/1.a - Hello World!.md",
-    "Lab Notes/Lab 1 - Environment Setup/1.b - Set up Python.md",
-    "Lab Notes/Lab 0 - Git Basics/Lab 0.b - Understanding Git.md",
-    "Lab Notes/Lab 0 - Git Basics/Lab 0.a - Source Control Intro.md",
-    "Lab Notes/Lab 0 - Git Basics/Lab 0.c - Branches and Forks.md",
-    "Lab Notes/Untitled.md",
     "Lab Notes/Lab 1 - Environment Setup",
     "Lecture Notes/Lecture 1",
-    "Miscellaneous Notes/Semantic Versioning Notes.md",
-    "Lecture Notes/WIPs and extras/Programming Languages III - Paradigms.md",
-    "Miscellaneous Notes/Glossary.md",
-    "Lecture Notes/Untitled.md",
-    "Lecture Notes/Lecture 0/0.e - Programming Languages II - Compiled vs Interpreted.md",
     "Lecture Notes/WIPs and extras",
     "Lecture Notes/Lecture 0",
     "Lab Notes/Lab 0 - Git Basics",

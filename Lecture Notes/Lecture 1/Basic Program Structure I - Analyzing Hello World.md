@@ -24,7 +24,10 @@ For the simplest possible program there's actually quite a lot going on here! Re
 ``` c
 #include <stdio.h>
 ```
-
+or in C++:
+``` cpp
+#include <iostream>
+```
 This line (1) is a *preprocessor directive*. This line tells the compiler toolchain: "Before you compile this, I want you to include the code required for using standard I/O (input/output) streams". We will need this functionality to write to the console in a basic manner. Behind the scenes, you are literally including another file: the C++ "#include \<iostream\>" line gets replaced with the contents of a file called "iostream.h" during a step called *preprocessing*, likewise for "<stdio.h>". Note the ".h" extension, for "header". Your compiler comes pre-packaged with many of these header files, and you will eventually write your own. For now, let's move to the next line.
 
 ``` C
@@ -42,7 +45,7 @@ printf("Hello World!\n");
 std::cout << "Hello, World!" << std::endl;
 ```
 
-This line is a *statement*. This is the first part of our code we have seen that will actually be executed. So what is going on here? Why are these so different between C and C++?
+This line is a *statement*. This is the first part of our code we have seen that will actually be executed. So what is going on here? Why is this line so different between C and C++?
 Spoiler alert: "return 0" in the next line isn't printing to the console. So that means this line is responsible for that. 
 In C, we call a function called "printf" and pass it the text we want to print. "\\n" is just a newline character, so in total we will print "Hello World!" and then go to the next line.
 We didn't define printf, though. Therefore, printf is either defined in the stdio.h file, or it is a builtin function that the compiler knows. But whatever that function is, it prints any text we pass it to the console.
@@ -56,7 +59,9 @@ At the end of the line, we cap it with a semicolon to indicate the end of a stat
 return 0;
 ```
 
-This line is another statement. It says that the function will return the value: 0. By convention, the program entrypoint is supposed to return an integer value. When a program entrypoint (i.e. main()) returns a value, this is considered an "exit code" for the process. These exit codes are generally used to determine whether or not a program completed successfully, or whether it exited with an error ("errored out" or "failed"). 
+This line is another statement. It says that the function will return the value: 0. By convention, the program entrypoint is supposed to return an integer value. We will talk more about returns in the notes on functions, but for now it suffices to say that a function can *return* some data to the thing that called it. Hence, writing "return 0;" simply says, terminate this function and yield the value 0 to the thing that invoked this function.
+
+When a program entrypoint (i.e. main()) returns a value, this is considered an "exit code" for the process. These exit codes are generally used to determine whether or not a program completed successfully, or whether it exited with an error ("errored out" or "failed"). 
 
 Finally, we end with:
 ```C
@@ -73,4 +78,12 @@ print("Hello World!")
 ```
 
 That's as simple as it gets! Because the Python interpreter is its own process, it has its own entrypoint. When it reads a script file, like helloworld.py, it starts at the top of the file and just works its way down. Since this is the first line, it executes it, then when it hits the end of the file without any errors, it returns successfully (with exit code 0.)
+
+Of course, this is simpler. One of the reasons why Python gained so much popularity so quickly is that it is generally simple, straightforward and usually easy to understand. However, this comes at a cost.  As we continue in the course, the many ways in which this is the case will become more apparent. 
+
+Now, I will do the most villainous thing so far in this course. Say goodbye to Python for a while. That's right, we won't be touching it for some time.
+
+Sometimes, the obscuration of the details can lead to an incorrect understanding, or just poorly-formed programs in general, even if it seems convenient and easy. There is also a performance overhead, but this course isn't really about performance optimization. The reason why we teach C/C++ in this course is to help ensure that you first understand the fundamentals and their semantics. That way, you'll have some idea of what is going on when Python behaves counterintuitively, and you'll be able to pick up any other programming language **much** more easily if you understand these concepts.
+
+For the above reason, I will be mentioning Python only briefly, when relevant, until later in the course. When we return to it, you will be much better equipped to solve problems, and you will better appreciate the conveniences that Python affords. From there, you should be well-equipped to pick up almost any programming language out there. Trust me, if you understand C and C++, most other languages will be a piece of cake.
 
