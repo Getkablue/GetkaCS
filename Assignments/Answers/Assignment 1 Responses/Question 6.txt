@@ -1,0 +1,16 @@
+D1= Current Date in days
+D2= User input date in days 
+
+if D1>D2; 
+	then return (365-D1)+D2 
+
+else 
+	return D2-D1;
+ 
+\\\Without built in date calculation functions, I am not sure if there is a way to write this algorithm 
+automatically without manually inputting which months have 31 or 30 days. My solution can be 
+imprecise and does not account for leap years.
+
+\\\If I am required to have the user input their birthday in the month/year format, then we would
+need to declare the range of days for each month, verify at the start of the algorithm whether or not 
+it is a leap year, and then convert the months to days using the date compiled from the second step.

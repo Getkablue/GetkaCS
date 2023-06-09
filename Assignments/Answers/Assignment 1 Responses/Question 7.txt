@@ -1,0 +1,11 @@
+x=userinput Celsius temp
+y=userinput Farenheit temp
+
+xa=Farenheit conversion
+ya=Celsius conversion
+
+ xa=(x*9/5)+32
+ 
+ ya=(y-32)*5/9
+ 
+ 
