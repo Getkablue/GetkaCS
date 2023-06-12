@@ -44,6 +44,12 @@ int calculateAge(int birthYear, int currentYear) {
 	return currentYear - birthYear; // inaccurate, but close enough...
 }
 ```
+We can also specify default values:
+``` cpp
+int calculateAge(int birthYear = 1996, int currentYear) {
+	return currentYear - birthYear;
+}
+```
 
 The names of parameters or arguments to a function are names for the *input it accepts*. The name that the function calls its input has nothing to do with *the name of the input actually passed to it.* For example, even if I have a variable somewhere called `a`, I can declare and define a new function with a parameter called `a` -- the two do not interfere or collide in any way. Inside the function, `a` will refer to its input, not to anything external. And of course, if I have variables `a`, `b`, `c`, and `finkeldorf`, any of them could be passed into the function, assuming they are the right type. Think of a function's parameters/arguments as being slots that accept any data which fits the type required -- the name for those slots is just a convenience.
 

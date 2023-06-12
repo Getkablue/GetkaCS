@@ -52,9 +52,9 @@ I know, I know. You feel violated. What just happened seems to defy any form of 
 
 The phenomenon that explains what you are seeing is called "pass-by-value" semantics. To pass *something* by value means that it is the *value of the thing itself* that matters, not the symbol which stores it. When we talk about mathematical functions which operate on a number, we are passing in that number "by value". If we mentally "get the square root of 16", i.e. call the function "sqrt(16)", nothing *actually happens* to the 16. If the sqrt function can be considered to have consumed anything, then it consumed "a temporary number" with the *value* 16. Similarly, if we run `a = 3; a = 5;`, it's not like we *destroyed the number 3*. 3 was just a value that `a` took on, and any number of variables are free to take on the value 3.
 
-"Pass by value" works the same way. It treats parameters as being freely interchangeable with their values. Therefore, by default, a function copies whatever was passed into it and performs all operations on that copy instead. This is useful for mathematical functions and functions working on small, easily-copyable primitives which essentially *are* their values (also known as "value types"). Among a value type, any two objects with the same value *are literally the same thing*. 4 *is* 4, 0.00001 *is* 0.00001 -- "a", "b" and "c" can all refer to the same number separately. 
+"Pass by value" works the same way. It treats parameters as being freely interchangeable with their values. Therefore, by default, a function copies whatever was passed into it and performs all operations on that copy instead. This is useful for mathematical functions and functions working on small, easily-copyable primitives which essentially *are* their values (also known as "value types"). Among a value type, any two objects with the same value *are literally the same thing*. 4 *is* 4, 0.00001 *is* 0.00001 -- "`int a`", "`int b`" and "`int c`" can all refer to the same number separately -- it's not like changing the value of one changes the other two.. 
 
-On the other hand, some types of data represent something *by virtue of existing as an independent reference*. For example, let's say we have a struct called `ColoredCircle` which represents (you guessed it) a geometric circle which has a color. If we instantiate a `ColoredCircle`, we are saying that a new `ColoredCircle` exists. Even if two circles in existence at the same time have the same origin point, radius and color, we still say that two different circles exist. At some point, it may be meaningful to change one particular aspect of the `ColoredCircle` , such as growing its radius. Hence, we want to refer to colored circles by *which one we want to operate on*. A *reference type* allows us to manage this. A reference type can be passed into a function to operate on that thing in a way that modifies the *original thing*, rather than on a "value copy".  By analogy, even if there is a shadow version of me which has all the same values for its data fields as I do, you are still capable, as a human, of referring to me and my shadow clone separately, because whatever type I am has *reference semantics* to you. Whenever you assign a name to a thing, that name is a *reference* to the underlying thing.
+On the other hand, some types of data represent something *by virtue of existing as an independent reference*. For example, let's say we have a struct called `ColoredCircle` which represents (you guessed it) a geometric circle which has a color. If we instantiate a `ColoredCircle`, we are saying that a new `ColoredCircle` exists. Even if two circles in existence at the same time have the same origin point, radius and color, we still say that two different circles exist. At some point, it may be meaningful to change one particular aspect of the `ColoredCircle` , such as growing its radius. Hence, we want to refer to colored circles by *which one we want to operate on*. A *reference type* allows us to manage this. A reference type can be passed into a function to operate on that thing in a way that modifies the *original thing*, rather than on a "value copy".  By analogy, even if there is a shadow version of me which has all the same values for its data fields as I do, you are still capable, as a human, of referring to me and my shadow clone separately, because whatever type I am has *reference semantics* to you. Whenever you assign a name to a thing, that name is actually a  *reference* to the underlying thing. 
 
 In contrast to pass-by-value is a type of parameter-passing known as "pass by reference". When you pass by reference, you pass in a reference type instead of a value type. This allows changes you make to parameter objects to affect the original objects. You can think of it as passing in *the name* or *the address* of a thing, rather than the thing itself.
 
@@ -72,7 +72,7 @@ If it helps, you can think of a Color& parameter as taking *a variable name whic
 ```
 The function isn't *actually* changing at all, to be clear. But it's close enough that it may help you understand the concept. 
 
-Symbols, in general, are references to another thing -- meaning that names are generally references. When we say `int a`, we are saying there is a symbol `a` which refers to an integer value. In this sense, any variable or const is "actually" a reference to a value. But we don't often think about them like that, because the symbol `a` can be immediately resolved to its value. For example, `int b = a;` means "the value referred to by `b` becomes the value referred to by `a`". Depending on how you think about it, you might think of `int& b = a;` such that the symbol `b`  *is the symbol* `a`
+Symbols, in general, are references to another thing -- meaning that names are generally references. When we say `int a`, we are saying there is a symbol `a` which refers to an integer value. In this sense, any variable or const is actually a reference to a value. But we don't often think about them like that, because the symbol `a` can be immediately resolved to its value. For example, `int b = a;` means "the value referred to by `b` becomes the value referred to by `a`". Depending on how you think about it, you might think of `int& b = a;` such that the symbol `b`  *is the symbol* `a`
 
 Try modifying the previous code sample to take references as input, rather than values, and run the code again. What do you see? Happy now?
 
@@ -104,7 +104,7 @@ Complete and run the above code as an exercise. What do you expect to see, and w
 
 Your compiler can make some inferences, based on return types and variable types, whether or not you are working with a reference or value. In any case, the compiler will usually give good error messages about these -- use these to guide you. For example, if your function return type is `Color&`, then `return color` will return the reference to color. If the function return type is just `Color`, then `return color` will yield a value instead, via implicit ref-to-value conversion.
 
-One key example of a big problem that a compiler will not catch:
+One key example of a big problem that a compiler might not catch:
 
 ```cpp
 Color& CreateANewColor(int r, int g, int b) {
@@ -177,6 +177,14 @@ int someValue = *newPtr; // Might crash here with segmentation fault
 std::cout << "Value in someValue: " << someValue << std::endl; // if not, enjoy junk!
 ```
 
+We can pass these pointers around as arguments to functions to pass-by-reference just as well:
+``` cpp
+void modifyAColor(Color* colorPtr, int newRedValue) {
+	colorPtr->r = newRedValue;
+}
+```
+As always, you as the programmer are responsible for making sure that pointers which get passed into this actually point to valid data (the same is true for references).
+
 Remember, a pointer is *itself* a type of data (underneath the hood, usually just a memory address in the form of integer of the same size as the system processor's architecture supports). Hence, you can have a *pointer to a pointer*, and so on:
 ``` cpp
 int a = 4;
@@ -206,7 +214,9 @@ Sometimes when writing a program, you need to allocate space in memory for yours
 
 Hence, variables declared in a function are *allocated statically* on the stack -- i.e., in a way that does not depend on runtime parameters. In addition, the stack is constantly changing -- what do we do if we need to allocate memory that will last longer than a function's lifetime? We can't use the stack for that.
 
-For cases where the amount of space we need is determined at runtime, or where the memory needs to exist for a longer lifetime than the function that allocates it, we need *dynamic allocation*. Memory allocated dynamically does not go on the stack. Instead, it goes to "the heap", which is another type of data structure. The operating system allocates heap space for your process when you run it. Thus, the heap acts as a repository for all dynamically allocated memory.
+For cases where the amount of space we need is determined at runtime, or where the memory needs to exist for a longer lifetime than the function that allocates it, we need *dynamic allocation*. Memory allocated dynamically does not go on the stack. Instead, it goes to "the heap", which is another segment of memory (confusingly unrelated to the data structure of the same name). The operating system allocates heap space for your process when you run it. Thus, the heap acts as a repository for all dynamically allocated memory. 
+
+Memory needs to be *addressable* -- that is, if we store something in memory, we need to know where to access it later. The total memory of the system can be considered to be a set of memory addresses from 0x00000.... through (whatever your maximum memory size is, in hexadecimal). Hence, we can describe each memory address as a number, representing either its absolute address, or its address relative to some other address. Each address stores one byte of information. Hence, we can describe a memory address a For memory allocated statically, this is all handled for you implicitly by the compiler. For dynamic memory though, we are explicitly asking the operating system to give us a chunk which we can address ourselves. (The addresses you get are actually often not the real, on-hardware addresses -- this is a system known as *virtual memory*, where the OS hides information about the actual memory from the running program.)
 
 In C, you call the function `malloc` to allocate memory on the heap. In order to use this, you actually need to know how much space to create. To find this, we often use the built-in `sizeof` function to find the size of an object in bytes:
 

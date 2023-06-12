@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture Notes/Lecture 1/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
+                "file": "Lecture Notes/Lecture 2/Lecture 2.b - Intro to Data Structures and Algorithms.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture Notes/Lecture 1/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
+                "file": "Lecture Notes/Lecture 2/Lecture 2.b - Intro to Data Structures and Algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture Notes/Lecture 1/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
+                "file": "Lecture Notes/Lecture 2/Lecture 2.b - Intro to Data Structures and Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture Notes/Lecture 1/Basic Program Structure VII - Pointers, References, and Memory Allocation.md"
+                "file": "Lecture Notes/Lecture 2/Lecture 2.b - Intro to Data Structures and Algorithms.md"
               }
             }
           }
@@ -175,41 +175,41 @@
   },
   "active": "17a8802ce9c44740",
   "lastOpenFiles": [
-    "Assignments/Checkpoint 1 - Initial Project Research.md",
-    "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
-    "Assignments/Assignment 6 - Writing Basic Programs, part 4.md",
-    "Assignments/Assignment 3 - Writing Basic Programs, part 1.md",
-    "Assignments/Assignment 4 - Writing Basic Programs, part 2.md",
-    "Assignments/Assignment 5 - Writing Basic Programs, part 3.md",
-    "Untitled.md",
-    "Lecture Notes/Lecture 1/Basic Program Structure Z - Conclusion.md",
-    "Lecture Notes/Lecture 1/Basic Program Structure II - Variables, Constants, Values and State.md",
-    "Lecture Notes/Lecture 1/Basic Program Structure III - Control Flow and Conditionals.md",
-    "Lecture Notes/WIPs and extras/Programming Languages III - Paradigms.md",
-    "Lecture Notes/WIPs and extras/Python Differences.md",
-    "Lab Notes/Untitled.md",
     "Lecture Notes/Lecture 1/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
-    "Lecture Notes/Lecture 1/Basic Program Structure - Code Comments.md",
-    "Lecture Notes/Lecture 1/Basic Program Structure -  C vs C++.md",
+    "Lecture Notes/Lecture 2/Lecture 2.b - Intro to Data Structures and Algorithms.md",
+    "Lab Notes/Lab 4 - External Dependencies/4.b - Research and Use a Python Package.md",
+    "Lab Notes/Lab 4 - External Dependencies/4.c - Using A Basic C++ Library.md",
+    "Lab Notes/Lab 4 - External Dependencies/4.a - Notes On Python Environments.md",
+    "Lecture Notes/WIPs and extras/Python Differences.md",
+    "Lecture Notes/Lecture 2/Lecture 2.x - Extra - Templates, Metaprogramming and `auto`.md",
+    "Lecture Notes/Lecture 2/Lecture 2.h - Data-Driven Programming and Patterns.md",
+    "Lab Notes/Lab 2 - Headers, Linking and Libraries/2.b - Multi-File Compilation.md",
+    "Lab Notes/Lab 2 - Headers, Linking and Libraries/2.a - Intro.md",
+    "Lecture Notes/Lecture 2/Lecture 2.d - Object Composition, Semantics and Relations.md",
     "Lecture Notes/Lecture 1/Basic Program Structure VI - Structs and Classes.md",
     "Lecture Notes/Lecture 1/Basic Program Structure VIII - Arrays and Collections.md",
-    "Lecture Notes/Lecture 1/Basic Program Structure IV - Loops.md",
-    "Lecture Notes/Lecture 1/Basic Program Structure I - Analyzing Hello World.md",
-    "Lecture Notes/Lecture 1/Basic Program Structure V - Functions and Scope.md",
-    "Lecture Notes/Lecture 0/0.f  - Types of Data.md",
-    "Miscellaneous Notes/Markdown Notes.md",
-    "Assignments/Assignment 0 - Git Basics.md",
-    "Assignments/Assignment 2 - Environment Setup.md",
-    "Lecture Notes/Lecture 0/0.b - Basic Computing Review.md",
+    "Lecture Notes/Lecture 2/Lecture 2.c - Intro to Programming Paradigms and Style.md",
+    "Lecture Notes/Lecture 2/Lecture 2.f - Event-driven Programming and Patterns.md",
+    "Lecture Notes/Lecture 2/Lecture 2.g - Functional Programming and Patterns.md",
+    "Lab Notes/Lab 3 - Catching Up With Python/3.d - Conclusion.md",
+    "Lab Notes/Lab 4 - External Dependencies",
+    "Lab Notes/Lab 3 - Catching Up With Python/3.c - Make a Basic Python Program.md",
+    "Lab Notes/Lab 3 - Catching Up With Python/3.b - Pythonic Code.md",
+    "Lecture Notes/Lecture 0/0.e - Programming Languages II - Compiled vs Interpreted.md",
+    "Lab Notes/Lab 3 - Catching Up With Python/3.a - Intro and Big Differences.md",
+    "Lab Notes/Lab 1 - Using Visual Studio + Debugging/1.d - A Step Beyond - Disassembly.md",
+    "Lab Notes/Lab 1 - Using Visual Studio + Debugging/1.c - Basic Debugging and Profiling.md",
+    "Lab Notes/Lab 1 - Using Visual Studio + Debugging/1.b - Brief Walkthrough of Visual Studio.md",
+    "Lab Notes/Lab 1 - Using Visual Studio + Debugging/1.a - Brief Troubleshooting Session.md",
+    "Assignments/Assignment 6 - Writing Basic Programs, part 4.md",
+    "Lab Notes/Lab 3 - Catching Up With Python",
+    "Lab Notes/Lab 2 - Headers, Linking and Libraries",
+    "Lab Notes/Lab 1 - Using Visual Studio + Debugging",
+    "Lecture Notes/Lecture 2",
     "Lab Notes/Lab 1 - Environment Setup",
     "Lecture Notes/Lecture 1",
     "Lecture Notes/WIPs and extras",
     "Lecture Notes/Lecture 0",
-    "Lab Notes/Lab 0 - Git Basics",
-    "Assignments",
-    "Miscellaneous Notes",
-    "Slides",
-    "Lab Notes",
-    "Lecture Notes"
+    "Lab Notes/Lab 0 - Git Basics"
   ]
 }

@@ -2,8 +2,6 @@ At this point, you are probably a little fatigued dealing with just numbers all 
 
 Thankfully, structs and classes are here to bring your programming skillset a little closer to reality. Structs and classes are (almost identical) ways to declare *new types of data*. These data-types allow you to create compositions of fields based on other types, and to allow these composed types to have their own semantics and operations.
 
-If it helps you remember, a "struct" describes a *structure* of data. A "class" can be considered to describe a *class* of data.
-
 But a struct or class is a *description of a type* of data. In most programming, we operate on *instances* of types of data (i.e. the data itself), not on the types themselves. Individual instances are also described as objects. So a class/struct is a blueprint or template for an object, and the instances of that struct/class are the objects themselves. By analogy, if Person is a class, then the person called Evan Smith is an instance of the Person class. That class may have a string field, called "name". For Evan Smith, the value of that field is the *string value* "Evan Smith". 
 
 To be clear, only structs exist in C. 
@@ -119,6 +117,10 @@ Of course, these are functions like any other, which means you can make them arb
 In fact, do exactly that as an exercise and make sure it compiles.
 
 For this course I will not be recommending that you use getters and setters, as they can clutter up code with boilerplate and sometimes introduce new bugs. But when you really need to validate input, or transform values as they are retrieved for some reason, you may want them.
+
+## Static Classes
+
+If you qualify a `class` as `static`, there will be only one instance of that class, and you will not be able to instantiate it. Instead, you will access its functions and variables by using `ClassName::field`. 
 
 ## Conclusion
 Defining classes and structs is a key part of programming. By composing data into "bundles of meaning" in the form of objects, you make it easier to reason about your program at a higher level, and allow yourself to make meaningful abstractions. You are essentially building up the meaning of your program.

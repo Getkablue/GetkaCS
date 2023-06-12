@@ -74,4 +74,32 @@ anotherVec.clear();
 
 The `std::vector` type is a good, robust implementation which allows efficient random access, and keeps elements contiguous in memory, which helps with performance. It also defines some nice conveniences in multiple ways. In fact, I haven't covered everything `std::vector`s can do in the above. In general, it will serve your needs very well when it comes to typical applications. However, if you are constantly resizing vectors, other data structures may be preferable -- we will discuss these later.
 
-We already talked about loops. For collections of arbitrary or unknown size (at least, those where size is not known at compile time), loops are essential for iterating over collections.
+Another collection which you will find helpful is the `std::unordered_map<T1, T2>` (or perhaps just `std::map<T1, T2>`  depending on your C++ version). This collection, also called a dictionary in some languages, *maps* a value of type T1 (uniquely) to a value of type T2. You index into the map with a "key" object of T1, and get a result which is of type T2. One way to use this might be to use `std::string`s contains a common name as keys mapping to objects:
+
+``` cpp
+// Assume there is some class Species. Instances of this class are individual species
+Species homosapiens;
+homosapiens.genus = "Homo";
+homosapiens.kingdom = "Animalia";
+//...
+
+Species apismellifera;
+apismellifera.genus = "Apis";
+apismellifera.kingdom = "Animalia";
+//...
+
+// common name as string key, Species as value
+std::unordered_map<std::string, Species> speciesMap;
+// Set some key-value pairs...
+speciesMap["human"] = homosapiens;
+speciesMap["honeybee"] = apismellifera;
+
+// Now use one
+Species someSpecies = speciesMap["honeybee"];
+someSpecies.printEtymologyInfo();
+
+```
+
+Whatever you use as the key will have one, unique, value associated with it. Keys don't need to be strings -- nothing stops you from passing in a complex object as a key. But the use cases associated with that are less common. In an abstract sense, you could think of an array or vector as being a map that just uses an integer index as a key.
+
+The two collection types above are suitable for many, many problems (they are available by default in Python, without invoking them by name, for a reason).
