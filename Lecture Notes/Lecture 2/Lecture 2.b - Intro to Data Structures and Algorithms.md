@@ -52,7 +52,7 @@ For the stack example, Push and Pop form the interface for our object. External 
 It's important to remember that you are not necessarily *trying* to shoehorn these structures in in any form -- they offer nothing on their own. But if there is a good implementation which works for your task, use it! Why code it yourself unless you *really* need custom functionality? When you need that, you'll know.
 
 ## Common Data Structures
-For each of the common data structures, we will describe them and briefly go over complexity of their operations. At each stage, I strongly encourage you to think about how these are actually working -- or how you  might implement them yourself. Look up sample code if you want. Don't just take my statements about complexity as fact and memorize it.
+For each of the common data structures, we will describe them and briefly go over complexity of their operations. At each stage, I strongly encourage you to think about how these are actually working -- or how you  might implement them yourself. Look up sample code if you want. Don't just take my statements about complexity as memorizable fact.
 
 ### Array
 We've seen the Array before. An Array is usually defined as a fixed-size block of continuous memory, containing multiple elements, which allows "random" (i.e. out-of-order) access. Does this ring any bells? "Random Access Memory"? Yeah, essentially our entire system memory can be treated like this.
@@ -113,9 +113,9 @@ This is a fun one. Hash tables, also called hash maps (and associative arrays, a
 
 Space complexity for a hash map is O(N) where N is the number of possible elements. But note that we need the hash function to make an index which is within bounds. As a result, the actual space used is usually significantly higher, to reduce the possibility of *hash collision* where two objects being hashed access the same location in memory. You generally don't have to worry about this accidentally happening -- most implementations do some double-checking to help prevent this.
 
-Time complexity here is also interesting. Searching, insertion and deletion are all O(N) in the worst case (where the hash table needs to be remade), but are have *amortized* time complexity O(1). The reasons why are fairly deep in the details.
+Time complexity here is also interesting. Searching, insertion and deletion are all O(N) in the worst case (where the hash table needs to be remade), but all have *amortized* time complexity O(1). For insertion and deletion, it makes sense -- it's basically just indexing into an array. For search, the reason why is probably not clear. How can it be faster than an array? That is up to the implementation separating items into different buckets. In practice, the number of buckets is selected such that we will only have to search a constant number of times for any given value, rather than the entire list.
 
-Hash tables are a super deep topic if you want to get into it, but if you don't, I don't blame you.
+Hash tables are a super deep topic if you want to get into it, but if you don't, I don't blame you. They sure are useful, though.
 
 ### Trees (many kinds)
 You can imagine what a tree structure "looks like". In this structure, there are nodes. Each node can have one or more children, but each node can have only one parent. The root node is a special case node with no parent. These constraints guarantee that there are no cycles in a tree.
@@ -252,6 +252,6 @@ For others, it will help you critically think about your solutions. After all, m
 
 Of course, some of that coefficient is basically baked into the hardware. But you'd be surprised just how much you can optimize something if you really feel like it. Video games are sort of a classic arena for creative forms of optimization like LODs, enemies moving at lower framerates or even being culled entirely when they're too far behind you, and so on. Similarly, if you have an expensive function which "needs to run for every object every frame to check for a special condition"... does it? Could you split the objects into 4 chunks and run those in successive frames, then find a result on the last one? Could you refactor it so that *an event close to what you are interested in* calls the function which does some deeper checking? The possibilities, again, are endless.
 
-Anyway, that's the crash course on data structures and algorithms. It's easier from here.
+Anyway, that's it! That's the crash course on data structures and algorithms. It's easier from here.
 
 
