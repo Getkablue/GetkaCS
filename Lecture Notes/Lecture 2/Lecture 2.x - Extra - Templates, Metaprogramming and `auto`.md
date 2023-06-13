@@ -1,6 +1,6 @@
 This segment is completely optional. You can make a fully working, complex program without ever touching generics. But generics can be very useful for making especially flexible libraries, and `auto` is just plain nice to have.
 
-We have briefly described a concept known as "generics", alternatively *generic programming*, in other parts of this course. For example, we described data structures which could contain any single type as their contents, like `std::vector<T>` which stores objects of type `T`.
+We have briefly described a concept known as "generics", alternatively *generic programming*, in other parts of this course. For example, we described data structures which could contain any single type as their contents, like `std::vector<T>` which stores objects of type `T`. In some sense, generic programming is a paradigm in its own right which eventually leads to metaprogramming. 
 
 In C++, `auto` is a keyword that allows the compiler to *infer* the type of the thing in question (and allows it to complain at you if it's too ambiguous to resolve). For example:
 ``` cpp
@@ -86,9 +86,11 @@ T* Create(int a, int b, int c) {
 
 Maybe you can see now how auto might be *necessary*, not just a *convenience*. If we `return T1 + T2`, but the expression `T1 + T2` returns some third type, we may not have any idea what the hell that is. Hence, you could use `auto` in the return type, and C++ will fill it in for you.
 
-Separating templated class definitions from their declarations is a little more complicated. If you have some template class, with some non-template functions inside it, you will need to template the definitions too.
+Separating templated class definitions from their declarations is a little more complicated than normal. If you have some template class, with some non-template functions inside it, you will need to template the definitions too in the implementation (so that the definitions apply to every instantiation of the template class). It's commonly said that "you can only define template functions in the header" but this is not true. You can separate the definitions out, you just need to be a little creative...
 
-Header:
+The most common pattern to do this is like this:
+
+Header file contents:
 ``` cpp
 #pragma once
 template <class T>
@@ -96,19 +98,40 @@ class Color {
 	T r, g, b;
 	T getBrightness();
 };
+
+// Here's the oddball part!
+#include "Color.tpp" 
 ```
 
-Implementation:
+"Template implementation" file contents ("Color.tpp"):
 ``` cpp
+#include "Color.h"
+
 template <class T>
-T Color::getBrightness() { return  r + g + b; }
+T Color<T>::getBrightness() { return  r + g + b; }
 ```
 
-It gets a little more complicated when there are templated functions inside template classes. As an exercise, try to figure this out!
+It gets a little more complicated when there are templated functions inside template classes. As an exercise, try to figure this out! (Hint: can you template a template?)
 
-Finally, we can also include *explicit template specializations* which override the implementation for a particular template parameter(s).
+Finally, we can also include *explicit template specializations* which override the implementation for a particular template parameter(s). For example:
+``` cpp
+#include <iostream>
+template<class T>
+T myFunction(T thing) {
+	std::cout << "Generic myFunction" << std::endl;
+	return thing;
+}
 
-Of course, we want to be able to reason more strongly about *what kinds* of things our template types and functions might be useful for. Which brings us to... 
+template<>
+int myFunction<int>(int thing) {
+	std::cout << "Integer-specific implementation of myFunction!" << std::endl;
+	return thing;
+}
+
+```
+
+
+Generics (and templates in general) can be very powerful. Of course, if we can have our cake and eat it too, we want to be able to reason more strongly about *what kinds* of things our template types and functions might be useful for, and make our generic code even more flexible while writing even less code. Which brings us to... 
 
 # Metaprogramming
 Okay, *now* you're thinking like a wizard. Metaprogramming is writing code that determines how your program is programmed. At its most powerful, we might think of metaprogramming as a set of techniques that allow us to create very expressive programs while writing very little code.
@@ -125,9 +148,9 @@ A *metaclass* is a class whose instances are *other classes*. So when you use th
 
 We can imagine that, besides this default metaclass, we could define our own metaclass... and instantiate that to define new types instead... But at this point, it's a little hard for us to imagine what that might even look like, let alone what it would accomplish. In C++, one such proposal uses so-called *static reflection*. 
 
-*Reflection* in general is the capability for programs to use information about themselves. This takes the form of either *static* or *dynamic* reflection. As usual for stuff we mention here, *static* reflection occurs at compile time, *dynamic* reflection occurs at runtime. For instance, you might include information in a type which is usable at runtime to query its type. That might be useful, for example, if you have a collection of base-class pointers but at some point do actually need to know what type the current object "actually is". Or you could use it to see at runtime if a type is a child of another. But this is actually a weaker form of static reflection. 
+*Reflection* in general is the capability for programs to use information about themselves and their capabilities. This takes the form of either *static* or *dynamic* reflection. As usual for stuff we mention here, *static* reflection occurs at compile time, *dynamic* reflection occurs at runtime. For instance, you might include information in a type which is usable at runtime to query its type. That might be useful, for example, if you have a collection of base-class pointers but at some point do actually need to know what type the current object "actually is". Or you could use it to see at runtime if a type is a child of another. But this is actually a weaker form of static reflection. 
 
-With static reflection, our program can change as it compiles to respond to changes in other parts of our program. For instance, we might write code which acts differently on types which have a variable named "name" than on types which do not have such a variable. In fact, with static reflection, we can *inject new code in response to some condition*. For instance, we might use static reflection to inject a new const field called "`_className`" into every class (which can then be used for runtime reflection, too). Hence, the existence of dynamic reflection does not imply static reflection is possible, but the existence of static reflection also instantly means dynamic reflection is possible to implement yourself. Of course, this has other applications too.
+With static reflection, our program can change as it compiles to respond to changes in other parts of our program. For instance, we might write code which acts differently on types which have a variable named "name" than on types which do not have such a variable. In fact, with static reflection, we can *inject new code in response to some condition*. For instance, we might use static reflection to inject a new const field called "`_className`" into every class (which can then be used for runtime reflection, too). Hence, the existence of dynamic reflection does not imply static reflection is possible, but the existence of static reflection also instantly means dynamic reflection is possible to implement yourself. Of course, this has other applications too. 
 
 Coming back to metaclasses, imagine if we had a type of class which required you, the programmer, to define certain fields. Or imagine if we had a type of class that would automatically be filled in with certain code if you named it a certain way. The actual possibilities here are pretty much endless. I, for one, would love to just write "Logged" in my class name and have the compiler automatically generate appropriate logging code for all my functions and variables.
 
@@ -141,7 +164,7 @@ One example of this type of feature that *has* made it to the level of being inc
 
 The newer versions of the C++ standards include a concept known as, well, "Concepts". A "Concept" is basically a set of constraints which a type must fulfill in order to be considered an instance of that Concept.
 
-The most basic form is something we have sort of already seen: a template in C++ will fail to compile if a class it is requested for doesn't support an operation used inside it. If our template uses `a + b` but the types of A and B don't support addition in that way, we will fail. A constraint could just be requiring that an expression like that compiles for those types. Or it could be reliant on some other information about the type... like whether it is convertible to bool, or whether it has "Bhengis" in the class name... again, we could be as dumb or intelligent with these as we like. 
+The most basic form is something we have sort of already seen: a template in C++ will fail to compile if a class it is requested for doesn't support an operation used inside it. If our template uses `a + b` but the types of A and B don't support addition in that way, we will fail. A constraint could just be requiring that an expression like that compiles for those types. Or it could be reliant on some other information about the type... like whether it is convertible to bool, or if it is a copyable thing or a pointer... again, we could be as dumb or intelligent with these as we like. 
 
 Anyway, if a concept is comprised of these constraints, then *any type which meets these constraints is usable as that Concept*. If I declare that a function takes a `Number`, where `Number` is a concept with constraints equating to "must support addition with itself" and "must support subtraction with itself", then I can pass in ints, floats, or any custom type which fulfills those, into the parameter which accepts a `Number`.
 
