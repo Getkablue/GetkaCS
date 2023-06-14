@@ -122,6 +122,7 @@ T myFunction(T thing) {
 	return thing;
 }
 
+// explicit specialization. Kind of a dumb syntax... 
 template<>
 int myFunction<int>(int thing) {
 	std::cout << "Integer-specific implementation of myFunction!" << std::endl;
