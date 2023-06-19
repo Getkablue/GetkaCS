@@ -1,0 +1,32 @@
+X= (User Input 1) cookies
+Y= (User Input 2) cookies
+z=0
+w=-1
+
+while w<0;
+	If x>=0 and y>=0;
+		Z= the total number of cookies ;
+		Return Z;
+		Print "I can math";
+		w=1;
+		
+	If x<0 or y<0;
+		Z= the total number of cookies;
+			if z>=0;
+				return z;
+			
+			else;
+				return "You owe somebody cookies";
+				
+		Print "Don't be negative"
+		w=1;
+	
+	Else;
+		Print "Please input a number";
+		
+	end;
+end;
+
+\\ The idea here is to create an algorithm that can be prompted for basic addition, and will 
+\\ return for the user a little joke if it detects a negative number operation. The algorithm will also
+\\ prompt the user to reinput their values if it detects the user has input anything other than a number.

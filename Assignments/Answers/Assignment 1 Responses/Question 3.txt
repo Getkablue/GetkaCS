@@ -1,0 +1,14 @@
+Banana Data Type:
+	Array of 6
+	Color=Yellow
+	Size=Small
+	Flavor=delicious
+	Nutrition=Potassium;
+	
+
+BannanaTree Data Type:
+	Contains array of X bannanas, 
+		X= any whole integer between 3 and 4
+	Size=Large
+	Flavor=Inedible
+	Nutrition=none; 

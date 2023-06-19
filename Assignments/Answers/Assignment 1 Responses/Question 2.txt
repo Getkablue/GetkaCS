@@ -1,0 +1,26 @@
+Class Data type structure
+	ATK=int
+	DEF=int
+	EVASION=int
+	IsWestern=Bool
+	IsEastern=Bool
+	TAUNT=String
+	
+Pirate Class
+	ATK=2
+	DEF=3
+	EVASION=1
+	IsWestern=T
+	IsEastern=F
+	TAUNT= "YAAARGH"
+	
+Ninja Class
+	ATK=1
+	DEF=2
+	EVASION=3
+	IsWestern=F
+	IsEastern=T
+	TAUNT= "..."
+	
+\\ I have derrived both Pirate and Ninja from the "Class" data type with arbitrary values assigned, 
+\\ As they are both sharing the same "Class" data type, they differ only in the values attributed to it.

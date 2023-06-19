@@ -8,3 +8,5 @@ Keep track of any git commands that you use to do these tasks, and put them into
 4. Now fork the repo you cloned in (1). Create a pull request to my repo that adds your name to the bottom of this file.
 5. Create a new branch of the repo from (4) and push it to your fork as a separate branch from main/master.
 6. Commit your responses to this assignment into your repo from the question 3 as a single file. The filename should contain "Git Basics" in some form.
+
+Rick
