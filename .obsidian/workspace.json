@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.i - Or as I like to call it, Error-Driven Programming.md",
+                "file": "Assignments/Assignment 4 - Writing Basic Programs, part 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.i - Or as I like to call it, Error-Driven Programming.md",
+                "file": "Assignments/Assignment 4 - Writing Basic Programs, part 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.i - Or as I like to call it, Error-Driven Programming.md",
+                "file": "Assignments/Assignment 4 - Writing Basic Programs, part 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.i - Or as I like to call it, Error-Driven Programming.md"
+                "file": "Assignments/Assignment 4 - Writing Basic Programs, part 2.md"
               }
             }
           }
@@ -175,8 +175,8 @@
   },
   "active": "17a8802ce9c44740",
   "lastOpenFiles": [
-    "Lecture Notes/Lecture 1 - Basic Program Structure/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
     "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.i - Or as I like to call it, Error-Driven Programming.md",
+    "Lecture Notes/Lecture 1 - Basic Program Structure/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
     "Lecture Notes/Lecture 1 - Basic Program Structure/Basic Program Structure VI - Structs and Classes.md",
     "Lecture Notes/Lecture 1 - Basic Program Structure/Basic Program Structure V - Functions and Scope.md",
     "Lecture Notes/Lecture 1 - Basic Program Structure/Basic Program Structure IV - Loops.md",

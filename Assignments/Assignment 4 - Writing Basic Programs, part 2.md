@@ -13,7 +13,7 @@ Problem 4: Consider the following program:
 int a = 10;
 
 void someFunction() {
-    int b = 20; // Local variable
+    int b = 20; 
 
     std::cout << "Inside someFunction:" << std::endl;
     std::cout << "b: " << b << std::endl;
@@ -38,11 +38,10 @@ int main() {
 Answer the following questions (all of these fall under Problem 4):
 1. What is the output of the program?
 2. Explain the concept of scope in programming.
-3. What is the scope of the `globalVariable` in the program?
-4. What is the scope of the `localVariable`?
-5. Can the `b` in the `someFunction()` function access the `b` in the `main()` function?
-6. Can the `someFunction()` function access the `a`?
-7. If we define a variable with the same name in a nested scope, which variable takes precedence?
-8. What happens if we try to access a variable outside of its scope?
-9. How can we make a variable accessible across multiple functions?
-10. What are the advantages of using local variables over global variables?
+3. What is the scope of each variable in the program?
+4. Can the `someFunction()` function access the `b` variable in the `main()` function?
+5. Can the `someFunction()` function access the `a` variable?
+6. If we define a variable with the same name in a nested scope, which variable takes precedence?
+7. What happens if we try to access a variable outside of its scope?
+8. How can we make a variable accessible across multiple functions?
+9. What are the advantages of using local variables over global variables?
