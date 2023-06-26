@@ -12,7 +12,7 @@ Task 4: Write a C program that finds the largest element in an array of integers
 
 Task 5: Write a C++ program that takes a vector of integers as input. Remove all occurrences of a specific number provided by the user. After removing the elements, display the updated vector.
 
-Task 6: Write a C++ program that takes two vectors of integers, and prints every **unique** sum of each possible pairwise combination between the two vectors. For example, if you receive `[1, 2, 3]` and `[2, 3, 4, 5]` as input, your program should output the following numbers only:
+Task 6: Write a C++ program that takes two vectors of integers, and prints every **unique** product of each possible pairwise combination between the two vectors. For example, if you receive `[1, 2, 3]` and `[2, 3, 4, 5]` as input, your program should output the following numbers only:
 2, 3, 4, 5, 6, 8, 9, 10, 12, 15
 
 
