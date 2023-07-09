@@ -59,3 +59,4 @@ int main() {
 6. We used `auto` to have the compiler infer the type for the variable `multiplyByNine`. What type is it actually?
 7. How might you use `std::bind`? Come up with your own example. 
 8. In the above example code we have bound to free functions. Can you bind to a member function (i.e. a function bound to a specific object)? If so, how? Why might you do this? What does it represent?
+9. Write a higher-order function which accepts a function parameter `func` and calls `func` on each value 1-100. It should then apply another function parameter, `func2`, which operates on all those values and produces a single value. When all this is done, it should print that value and return the result of another function parameter `func3` on that value. 
