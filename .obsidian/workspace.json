@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Assignments/Assignment 9 - Writing Data Structures and Algorithms.md",
+                "file": "Assignments/Assignment 10 - Feeling Functional.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assignments/Assignment 9 - Writing Data Structures and Algorithms.md",
+                "file": "Assignments/Assignment 10 - Feeling Functional.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Assignments/Assignment 9 - Writing Data Structures and Algorithms.md",
+                "file": "Assignments/Assignment 10 - Feeling Functional.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Assignments/Assignment 9 - Writing Data Structures and Algorithms.md"
+                "file": "Assignments/Assignment 10 - Feeling Functional.md"
               }
             }
           }
@@ -175,8 +175,9 @@
   },
   "active": "17a8802ce9c44740",
   "lastOpenFiles": [
-    "Assignments/Assignment 8 - Turning Up Complexity.md",
     "Assignments/Assignment 9 - Writing Data Structures and Algorithms.md",
+    "Assignments/Assignment 8 - Turning Up Complexity.md",
+    "Assignments/Assignment 10 - Feeling Functional.md",
     "Lab Notes/Lab 5 - Input and Output/5.d - Do Your Own Research.md",
     "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.i - Or as I like to call it, Error-Driven Programming.md",
     "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.h - Data-Driven Programming and Patterns.md",
@@ -202,7 +203,6 @@
     "Lab Notes/Lab 3 - Catching Up With Python/3.b - Pythonic Code.md",
     "Lab Notes/Lab 5 - Input and Output",
     "Lecture Notes/WIP - Lecture 3 - Communications/3.c - Networking Basics.md",
-    "Lecture Notes/WIP - Lecture 3 - Communications/3.e - System-wide Communication.md",
     "Lecture Notes/WIP - Lecture 3 - Communications",
     "Lab Notes/WIP - Lab 7 - Networking and the Web",
     "Lab Notes/WIP - Lab X - Build Systems",
