@@ -132,4 +132,7 @@ When the user is done providing input, the program should then print information
 2. Compare and contrast composition and inheritance. When would you choose one over the other? Give an example to support your answer. And don't give me my own example. Please, come up with your own.
     
 3. Describe the fundamental principles of object-oriented programming. How do these principles help in designing and developing robust software systems? Provide specific examples from your own perspective.
+	
+4.  Can a derived class access a base class function which was overridden?
+5.  What can you say about memory structure between base and derived classes? If I have `Base`, `DerivedA` and `DerivedB`, where the last two both inherit from `Base` and add their own variables, what does their layout in memory look like? Draw a picture/diagram.
     
