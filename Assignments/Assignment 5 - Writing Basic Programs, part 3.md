@@ -78,4 +78,5 @@ int main() {
 
 a. What is the output of the program? 
 b. Explain the concept of object copying. What is actually happening here?
+	When I write `Car car2 = car1`; what am I actually doing? Visualize this and the memory involved.
 c. What is the difference between a struct and a class in C++? What might affect whether you use a struct versus a class?
