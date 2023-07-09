@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lab Notes/Lab 5 - Input and Output/5.b - Actually Doing It.md",
+                "file": "Lab Notes/Lab 5 - Input and Output/5.d - Do Your Own Research.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lab Notes/Lab 5 - Input and Output/5.b - Actually Doing It.md",
+                "file": "Lab Notes/Lab 5 - Input and Output/5.d - Do Your Own Research.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lab Notes/Lab 5 - Input and Output/5.b - Actually Doing It.md",
+                "file": "Lab Notes/Lab 5 - Input and Output/5.d - Do Your Own Research.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lab Notes/Lab 5 - Input and Output/5.b - Actually Doing It.md"
+                "file": "Lab Notes/Lab 5 - Input and Output/5.d - Do Your Own Research.md"
               }
             }
           }
@@ -173,20 +173,23 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a8e473309b494789",
+  "active": "17a8802ce9c44740",
   "lastOpenFiles": [
-    "Lab Notes/Lab 5 - Input and Output/5.a - Reading and Writing Files.md",
-    "Lab Notes/Lab 5 - Input and Output/5.b - Actually Doing It.md",
-    "Lab Notes/Lab 5 - Input and Output/5.0 - Intro to Input and Output.md",
-    "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.x - Extra - Templates, Metaprogramming and `auto`.md",
     "Assignments/Assignment 8 - Turning Up Complexity.md",
+    "Lab Notes/Lab 5 - Input and Output/5.d - Do Your Own Research.md",
+    "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.i - Or as I like to call it, Error-Driven Programming.md",
+    "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.h - Data-Driven Programming and Patterns.md",
     "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.e - Object Oriented Programming and Patterns.md",
+    "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.d - Object Composition, Semantics and Relations.md",
+    "Lab Notes/Lab 5 - Input and Output/5.b - Actually Doing It.md",
+    "Lab Notes/Lab 5 - Input and Output/5.a - Reading and Writing Files.md",
+    "Lab Notes/Lab 5 - Input and Output/5.0 - Intro to Input and Output.md",
     "Assignments/Assignment 7 - Writing Basic Programs, part 5.md",
+    "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.x - Extra - Templates, Metaprogramming and `auto`.md",
     "Assignments/Assignment 3 - Writing Basic Programs, part 1.md",
     "Assignments/Assignment 6 - Writing Basic Programs, part 4.md",
     "Assignments/Assignment 5 - Writing Basic Programs, part 3.md",
     "Assignments/Assignment 4 - Writing Basic Programs, part 2.md",
-    "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.i - Or as I like to call it, Error-Driven Programming.md",
     "Lecture Notes/Lecture 1 - Basic Program Structure/Basic Program Structure VII - Pointers, References, and Memory Allocation.md",
     "Lecture Notes/Lecture 1 - Basic Program Structure/Basic Program Structure VI - Structs and Classes.md",
     "Lecture Notes/Lecture 1 - Basic Program Structure/Basic Program Structure V - Functions and Scope.md",
@@ -200,13 +203,10 @@
     "Lecture Notes/WIP - Lecture 3 - Communications/3.c - Networking Basics.md",
     "Lecture Notes/WIP - Lecture 3 - Communications/3.e - System-wide Communication.md",
     "Lecture Notes/WIP - Lecture 3 - Communications/3.d - Web Basics.md",
-    "Lecture Notes/Lecture 2 - Paradigms, Patterns and Principles/Lecture 2.j - Conclusion.md",
-    "Lab Notes/Lab 3 - Catching Up With Python/3.d - Conclusion.md",
     "Lecture Notes/WIP - Lecture 3 - Communications",
     "Lab Notes/WIP - Lab 7 - Networking and the Web",
     "Lab Notes/WIP - Lab X - Build Systems",
     "Lab Notes/WIP - Lab 6 - Making GUI Applications",
-    "Assignments/Checkpoint 1 - Initial Project Research.md",
     "Lab Notes/Lab 4 - External Dependencies",
     "Lab Notes/Lab 3 - Catching Up With Python",
     "Lab Notes/Lab 2 - Headers, Linking and Libraries",
